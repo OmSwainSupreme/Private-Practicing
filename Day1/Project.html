@@ -1,34 +1,214 @@
-<!DOCTYPE html>
-<html lang="eng">
+to <!DOCTYPE html>
+<html lang="en">
 
-<head meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <title>Techfest 2026</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: #fff; }
+        .page { width: min(100%, 1400px); margin: 10px auto; border: 1px solid #9a9a9a; background: #fff; }
+        .topbar, .hero, .highlights, .about, .events, .partners, .footer-inner, .footer-bottom { border-top: 1px solid #bdbdbd; }
+        .topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; }
+        .nav-links a { color: #222; text-decoration: none; margin-left: 34px; font-size: 14px; }
+        .nav-links a:first-child { margin-left: 0; border-bottom: 2px solid #444; padding-bottom: 4px; }
+        .hero { min-height: 300px; padding: 40px 46px; position: relative; background: linear-gradient(135deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%), linear-gradient(45deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%); background-color: #f7f7f7; }
+        .hero .content { max-width: 560px; }
+        .hero h1 { font-size: 56px; margin: 6px 0 10px; letter-spacing: 1px; }
+        .hero h3 { margin: 0; font-weight: normal; }
+        .hero .subtitle { font-size: 18px; font-weight: 700; margin-top: 8px; }
+        .meta { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 18px; font-size: 14px; }
+        .btn-dark, .btn-outline { padding: 9px 18px; font-size: 12px; letter-spacing: 1px; font-weight: 700; }
+        .btn-dark { background: #222; color: #fff; border: 1px solid #222; }
+        .btn-outline { background: #fff; color: #222; border: 1px solid #222; }
+        .section-title { text-align: center; margin: 0 0 22px; font-size: 22px; letter-spacing: 1px; }
+        .highlights, .about, .events, .partners { padding: 16px 26px 30px; }
+        .highlight-grid, .event-grid, .partner-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+        .highlight-card { width: 110px; height: 100px; border: 1px solid #bdbdbd; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; font-size: 13px; }
+        .about-wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 34px; align-items: center; }
+        .placeholder { border: 1px solid #bdbdbd; min-height: 145px; background: linear-gradient(135deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%), linear-gradient(45deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%); background-color: #fafafa; }
+        .events .event-card { width: 200px; border: 1px solid #bdbdbd; background: #fff; overflow: hidden; }
+        .events .thumb { height: 66px; border-bottom: 1px solid #bdbdbd; background: linear-gradient(135deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%), linear-gradient(45deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%); background-color: #fafafa; }
+        .event-body { padding: 10px 12px 12px; }
+        .partner-box { width: 120px; height: 40px; border: 1px solid #bdbdbd; background: linear-gradient(135deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%), linear-gradient(45deg, transparent 49.5%, #d3d3d3 50%, transparent 50.5%); background-color: #fafafa; }
+        .footer-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 18px 22px; }
+        .footer-col:not(:last-child) { border-right: 1px solid #cfcfcf; padding-right: 18px; }
+        .footer-bottom { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 10px 18px; font-size: 12px; }
+        @media (max-width: 900px) {
+            .topbar { display: grid; gap: 10px; }
+            .about-wrap, .footer-inner { grid-template-columns: 1fr; }
+            .nav-links a { margin: 0 18px 0 0; }
+            .footer-col:not(:last-child) { border-right: 0; padding-right: 0; border-bottom: 1px solid #cfcfcf; padding-bottom: 14px; }
+        }
+    </style>
 </head>
 
 <body>
-    <nav style="display: flex; align-items: center; justify-content: space-between;">
+    <div class="page">
+    <nav class="topbar">
 
-        <a href="Project.html"><img src="C:\Visual Studio Code\Private Practie\Day1\Screenshot 2026-08-02 202209.png"
-                alt="Logo" title="Techfest 2026" style="width: 80px; height: auto;"></a>
+        <a href="Project.html"><img src="Screenshot 2026-08-02 202209.png" alt="Logo" title="Techfest 2026" style="width: 70px; height: auto;"></a>
 
-        <div>
+        <div class="nav-links">
             <a href="#">Home</a>
-            <a href="#" style="margin-left:20px;">About</a>
-            <a href="#" style="margin-left:20px;">Events</a>
-            <a href="#" style="margin-left:20px;">Schedule</a>
-            <a href="#" style="margin-left:20px;">Gallery</a>
-            <a href="#" style="margin-left:20px;">Register</a>
-            <a href="#" style="margin-left:20px;">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Schedule</a>
+            <a href="#">Gallery</a>
+            <a href="#">Register</a>
+            <a href="#">Contact</a>
         </div>
     </nav>
-    <header style="text-align: center; margin-top: 50px;">
-        <div>
-            <h3>Welcome to</h3>
-            <h1>Techfest 2026</h1>
-            <h3>Innovation begains here</h3>
-            <p>🗓️ 25 - 27 August 2026       📍 Central University of Jammu      ⏱️ 9:00 AM - 6:00 PM </p>
+    <header class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Gemini_Generated_Image_kc92ynkc92ynkc92.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="content">
+            <h3 style="color: #fff; margin: 0; font-size: 18px;">Welcome to</h3>
+            <h1 style="color: #fff; font-size: 56px; margin: 6px 0 10px; letter-spacing: 1px;">TECHFEST 2026</h1>
+            <h3 class="subtitle" style="color: #fff; margin: 0; font-weight: normal; font-size: 18px; font-weight: 700; margin-top: 8px;">Innovation Begins Here</h3>
+            <div style="width: 90px; border-top: 2px solid #fff; margin: 18px 0 16px;"></div>
+            <div class="meta" style="color: #fff;">
+                <p>📅 25 - 27 April 2026</p>
+                <p>📍 CU Jammu Campus</p>
+                <p>⏱️ 9:00 AM - 6:00 PM</p>
+            </div>
+            <div style="margin-top: 18px;"><button class="btn-dark">REGISTER NOW</button></div>
         </div>
     </header>
+    <section class="highlights">
+        <h2 class="section-title">HIGHLIGHTS</h2>
+        <div style="width: 56px; border-top: 2px solid #555; margin: -10px auto 18px;"></div>
+        <div class="highlight-grid">
+            <div class="highlight-card">20+<br>Events</div>
+            <div class="highlight-card">₹50000+<br>Prize Pool</div>
+            <div class="highlight-card">Workshops</div>
+            <div class="highlight-card">Hackathons</div>
+            <div class="highlight-card">Robotics</div>
+            <div class="highlight-card">Fun &<br>Games</div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-wrap">
+        <figure style="margin: 0;">
+            <img src="Gemini_Generated_Image_6htvwo6htvwo6htv.png" alt="About TechFest" style="width: 100%; height: 145px; object-fit: cover; border: 1px solid #bdbdbd;">
+            <figcaption style="text-align: center; margin-top: 10px; font-size: 12px; color: #666;"></figcaption>
+        </figure>
+        <article>
+            <h2>ABOUT TECHFEST</h2>
+            <p style="font-size: 14px; line-height: 1.6; color: #333; margin: 15px 0; max-width: 460px;">TechFest is our college's annual technical festival that brings together brilliant minds to learn, compete, and innovate. Join us for an unforgettable experience filled with knowledge, creativity and fun!</p>
+            <button class="btn-outline">KNOW MORE</button>
+        </article>
+        </div>
+    </section>
+
+    <section class="events" aria-labelledby="events-heading">
+        <header style="text-align: center; margin-bottom: 18px;">
+            <h2 id="events-heading" class="section-title">UPCOMING EVENTS</h2>
+            <div style="width: 56px; border-top: 2px solid #555; margin: -10px auto 18px;"></div>
+        </header>
+
+        <div class="event-grid">
+            <article class="event-card">
+                <figure style="margin: 0;">
+                    <div class="thumb"></div>
+                    <figcaption class="event-body">
+                        <h3 style="margin: 0 0 8px; font-size: 16px;">Hackathon 2026</h3>
+                        <p style="margin: 0 0 6px; font-size: 12px; color: #555;">📅 25 Apr 2026</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">📍 Lab 1</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="event-card">
+                <figure style="margin: 0;">
+                    <div class="thumb"></div>
+                    <figcaption class="event-body">
+                        <h3 style="margin: 0 0 8px; font-size: 16px;">Web Dev Contest</h3>
+                        <p style="margin: 0 0 6px; font-size: 12px; color: #555;">📅 25 Apr 2026</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">📍 Lab 2</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="event-card">
+                <figure style="margin: 0;">
+                    <div class="thumb"></div>
+                    <figcaption class="event-body">
+                        <h3 style="margin: 0 0 8px; font-size: 16px;">Robotics Challenge</h3>
+                        <p style="margin: 0 0 6px; font-size: 12px; color: #555;">📅 26 Apr 2026</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">📍 Seminar Hall</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="event-card">
+                <figure style="margin: 0;">
+                    <div class="thumb"></div>
+                    <figcaption class="event-body">
+                        <h3 style="margin: 0 0 8px; font-size: 16px;">Gaming Tournament</h3>
+                        <p style="margin: 0 0 6px; font-size: 12px; color: #555;">📅 26 Apr 2026</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">📍 Auditorium</p>
+                    </figcaption>
+                </figure>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 14px;">
+            <button class="btn-outline">VIEW ALL EVENTS</button>
+        </div>
+    </section>
+
+    <section class="partners" aria-labelledby="partners-heading">
+        <header style="text-align: center; margin-bottom: 14px;">
+            <h2 id="partners-heading" style="margin: 0; font-size: 24px; letter-spacing: 1px;">OUR PARTNERS</h2>
+            <div style="width: 56px; border-top: 2px solid #555; margin: 10px auto 0;"></div>
+        </header>
+
+        <div class="partner-grid">
+            <figure class="partner-box" style="margin: 0;"></figure>
+            <figure class="partner-box" style="margin: 0;"></figure>
+            <figure class="partner-box" style="margin: 0;"></figure>
+            <figure class="partner-box" style="margin: 0;"></figure>
+            <figure class="partner-box" style="margin: 0;"></figure>
+        </div>
+    </section>
+
+    <footer style="border-top: 1px solid #cfcfcf; background: #f9f9f9;">
+        <div class="footer-inner">
+            <section class="footer-col">
+                <h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">ABOUT US</h3>
+                <p style="margin: 0 0 14px; font-size: 12px; line-height: 1.5; color: #444; max-width: 240px;">TechFest is a platform for students to explore, learn and showcase their talent.</p>
+                <div style="display: flex; gap: 10px; font-size: 16px; color: #444;">
+                    <span>◻</span><span>◻</span><span>◻</span><span>◻</span>
+                </div>
+            </section>
+
+            <section class="footer-col">
+                <h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">QUICK LINKS</h3>
+                <p style="margin: 0; font-size: 12px; line-height: 1.7; color: #444;">Home<br>About<br>Events<br>Schedule<br>Gallery<br>Register<br>Contact</p>
+            </section>
+
+            <section class="footer-col">
+                <h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">CONTACT INFO</h3>
+                <p style="margin: 0 0 10px; font-size: 12px; line-height: 1.6; color: #444;">📍 Central University of Jammu,<br>Rahya-Suchani, Bagla,<br>Jammu, J&K 181143</p>
+                <p style="margin: 0 0 10px; font-size: 12px; color: #444;">📞 +91 98765 43210</p>
+                <p style="margin: 0; font-size: 12px; color: #444;">✉ techfest@cujammu.ac.in</p>
+            </section>
+
+            <section>
+                <h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">NEWSLETTER</h3>
+                <p style="margin: 0 0 12px; font-size: 12px; line-height: 1.5; color: #444;">Subscribe to get updates about Techfest 2026.</p>
+                <input type="email" placeholder="Enter your email" style="width: 100%; max-width: 220px; padding: 8px 10px; border: 1px solid #777; margin-bottom: 10px; box-sizing: border-box;">
+                <div>
+                    <button class="btn-outline">SUBSCRIBE</button>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 TechFest. All Rights Reserved.</span>
+            <button type="button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" style="border: 1px solid #888; width: 18px; height: 18px; display: inline-flex; align-items: center; justify-content: center; background: #fff; cursor: pointer; padding: 0;">↑</button>
+        </div>
+    </footer>
+    </div>
 </body>
 
 </html>
