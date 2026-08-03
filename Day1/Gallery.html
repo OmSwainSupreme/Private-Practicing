@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - TechFest 2026</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: #fff; }
+        html { scroll-behavior: smooth; }
+        .page { width: min(100%, 1400px); margin: 10px auto; border: 1px solid #9a9a9a; background: #fff; }
+        .topbar, .hero, .gallery-wrap, .footer-inner, .footer-bottom { border-top: 1px solid #bdbdbd; }
+        .topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; }
+        .nav-links a { color: #222; text-decoration: none; margin-left: 34px; font-size: 14px; }
+        .nav-links a:first-child { margin-left: 0; }
+        .nav-links a.active { border-bottom: 2px solid #444; padding-bottom: 4px; }
+        .brand-link { display: inline-flex; align-items: center; }
+        .brand-logo { width: 70px; height: auto; display: block; }
+        .hero { min-height: 220px; padding: 34px 40px; background: linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.58)), url('Gemini_Generated_Image_6htvwo6htvwo6htv.png') center/cover no-repeat; color: #fff; }
+        .hero h1 { margin: 0 0 10px; font-size: 52px; }
+        .hero p { margin: 0; max-width: 620px; font-size: 14px; line-height: 1.6; }
+        .content { padding: 26px; }
+        .section-title { text-align: center; font-size: 22px; letter-spacing: 1px; margin: 0 0 18px; }
+        .underline { width: 56px; border-top: 2px solid #555; margin: 10px auto 0; }
+        .gallery-wrap { padding: 18px 0 0; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+        .tile { border: 1px solid #bdbdbd; overflow: hidden; background: #fafafa; min-height: 150px; }
+        .tile img, .tile video { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .tile.tall { min-height: 240px; }
+        .tile.logo { display: flex; align-items: center; justify-content: center; background: #fff; }
+        .tile.logo img { object-fit: contain; padding: 10px; }
+        .footer-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 18px 22px; }
+        .footer-col:not(:last-child) { border-right: 1px solid #cfcfcf; padding-right: 18px; }
+        .footer-bottom { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 10px 18px; font-size: 12px; }
+        .footer-btn { border: 1px solid #888; width: 18px; height: 18px; display: inline-flex; align-items: center; justify-content: center; background: #fff; cursor: pointer; padding: 0; }
+        @media (max-width: 900px) {
+            .topbar { display: grid; gap: 10px; }
+            .gallery-grid, .footer-inner { grid-template-columns: 1fr; }
+            .nav-links { display: flex; flex-wrap: wrap; gap: 14px 18px; }
+            .nav-links a { margin-left: 0; }
+            .footer-col:not(:last-child) { border-right: 0; padding-right: 0; border-bottom: 1px solid #cfcfcf; padding-bottom: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="topbar">
+            <a class="brand-link" href="Home.html"><img src="Screenshot 2026-08-02 202209.png" alt="Logo" class="brand-logo"></a>
+            <div class="nav-links">
+                <a href="Home.html">Home</a><a href="About.html">About</a><a href="Events.html">Events</a><a href="Schedule.html">Schedule</a><a href="Gallery.html" class="active">Gallery</a><a href="Register.html">Register</a><a href="Contact.html">Contact</a>
+            </div>
+        </header>
+        <section class="hero"><h1>Gallery</h1><p>A visual collection of ideas, people, sponsor partners, and event energy captured from the TechFest universe.</p></section>
+        <main class="content">
+            <section class="gallery-wrap">
+                <h2 class="section-title">HIGHLIGHTS<div class="underline"></div></h2>
+                <div class="gallery-grid">
+                    <div class="tile tall"><img src="Gemini_Generated_Image_kc92ynkc92ynkc92.png" alt="Festival hero image"></div>
+                    <div class="tile tall"><img src="Gemini_Generated_Image_6htvwo6htvwo6htv.png" alt="Festival crowd"></div>
+                    <div class="tile tall"><video src="esports.mp4" autoplay muted loop playsinline></video></div>
+                    <div class="tile"><img src="Hackathon.png" alt="Hackathon"></div>
+                    <div class="tile"><img src="webdev.png" alt="Web dev contest"></div>
+                    <div class="tile"><video src="Robotics.mp4" autoplay muted loop playsinline></video></div>
+                    <div class="tile logo"><img src="microfost.png" alt="Microfost"></div>
+                    <div class="tile logo"><img src="meta.webp" alt="Meta"></div>
+                    <div class="tile logo"><img src="amazon.png" alt="Amazon"></div>
+                    <div class="tile logo"><img src="google.jpg" alt="Google"></div>
+                    <div class="tile logo"><img src="Apple-Logo.png" alt="Apple"></div>
+                    <div class="tile logo"><img src="Screenshot 2026-08-02 202209.png" alt="TechFest logo"></div>
+                </div>
+            </section>
+        </main>
+        <footer style="border-top: 1px solid #cfcfcf; background: #f9f9f9;">
+            <div class="footer-inner">
+                <section class="footer-col"><h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">ABOUT US</h3><p style="margin: 0 0 14px; font-size: 12px; line-height: 1.5; color: #444; max-width: 240px;">TechFest is a platform for students to explore, learn and showcase their talent.</p><div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;"><a href="https://www.instagram.com/omprakash.builds" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #bdbdbd; border-radius: 4px; background: #fff;"><img src="data:image/jpeg;base64,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" alt="Instagram" style="width: 18px; height: 18px; display: block;"></a><a href="https://www.linkedin.com/in/om-prakash-swain-645817392" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #bdbdbd; border-radius: 4px; background: #fff;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 18px; height: 18px; display: block;"></a><a href="https://www.github.com/OmSwainSupreme" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #bdbdbd; border-radius: 4px; background: #fff;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 18px; height: 18px; display: block;"></a></div></section>
+                <section class="footer-col"><h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">QUICK LINKS</h3><p style="margin: 0; font-size: 12px; line-height: 1.7; color: #444;"><a href="Home.html" style="color: inherit; text-decoration: underline;">Home</a><br><a href="About.html" style="color: inherit; text-decoration: underline;">About</a><br><a href="Events.html" style="color: inherit; text-decoration: underline;">Events</a><br><a href="Schedule.html" style="color: inherit; text-decoration: underline;">Schedule</a><br><a href="Gallery.html" style="color: inherit; text-decoration: underline;">Gallery</a><br><a href="Register.html" style="color: inherit; text-decoration: underline;">Register</a><br><a href="Contact.html" style="color: inherit; text-decoration: underline;">Contact</a></p></section>
+                <section class="footer-col"><h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">CONTACT INFO</h3><p style="margin: 0 0 10px; font-size: 12px; line-height: 1.6; color: #444;">📍 Central University of Jammu,<br>Rahya-Suchani, Bagla,<br>Jammu, J&K 181143</p><a href="tel:+919906477851" style="font-size: 12px; color: #444; text-decoration: underline;">📞 +91 99064 77851</a><a href="mailto:om.swain@outlook.com" style="display: block; font-size: 12px; color: #444; text-decoration: underline; margin-top: 4px;">✉ om.swain@outlook.com</a></section>
+                <section class="footer-col"><h3 style="margin: 0 0 12px; font-size: 14px; letter-spacing: 1px;">NEWSLETTER</h3><p style="margin: 0 0 12px; font-size: 12px; line-height: 1.5; color: #444;">Subscribe to get updates about Techfest 2026.</p><input type="email" placeholder="Enter your email" style="width: 100%; max-width: 220px; padding: 8px 10px; border: 1px solid #777; margin-bottom: 10px; box-sizing: border-box;"><div><button class="btn-outline">SUBSCRIBE</button></div></section>
+            </div>
+            <div class="footer-bottom"><span>© 2026 TechFest. All Rights Reserved.</span><button type="button" class="footer-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button></div>
+        </footer>
+    </div>
+</body>
+</html>
